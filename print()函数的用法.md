@@ -18,10 +18,11 @@ print('3+1')
 
 将数据输出到文件中
 ```Python
-fp=open('D:/test.txt','a+') # a+ 如果文件不存在就创建，存在就在文件的内容的后面继续追加
+fp=open('D:/test.txt','a+')
 print('helloworld',file=fp)
 fp.close()
 ```
+>a+ 如果文件不存在就创建，存在就在文件的内容的后面继续追加
 **注意点：**
 **1. 所指定的盘符要存在。**
 **2.  使用file= fp。**
