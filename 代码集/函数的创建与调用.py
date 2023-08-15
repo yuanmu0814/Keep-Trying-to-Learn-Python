@@ -15,3 +15,4 @@ def calc(a,b):
     return c
 result = calc(10, 20)
 print(result)
+
