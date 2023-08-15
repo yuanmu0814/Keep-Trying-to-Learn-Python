@@ -12,3 +12,19 @@ print(result)
 
 result = calc(b = 10, a = 20)  # =左侧的变量的名称称为关键字参数
 print(result)
+
+def fun(arg1, arg2):
+    print('arg1=', arg1)
+    print('arg2=', arg2)
+    arg1 = 100
+    arg2.append(10)
+    print('arg1=', arg1)
+    print('arg2=', arg2)
+n1 = 11
+n2 = [22, 33, 44]
+print(n1)
+print(n2)
+print('----------')
+fun(n1, n2)
+print(n1)
+print(n2)
