@@ -20,11 +20,14 @@ def fun(arg1, arg2):
     arg2.append(10)
     print('arg1=', arg1)
     print('arg2=', arg2)
+
 n1 = 11
 n2 = [22, 33, 44]
 print(n1)
 print(n2)
 print('----------')
-fun(n1, n2)
+fun(n1, n2)  # 将位置传参，arg1，arg2是函数定义处的形参，n1，n2是函数调用处的实参。
+# 总结：实参名称与形参名称可以不一致
 print(n1)
 print(n2)
+
