@@ -89,4 +89,11 @@ def fun8(a, b, *, c, d):  # 从*之后的参数，在函数调用时，只能常
     print('c=', c)
     print('d=', d)
 
+def fun9(a, b, *, c, d, **args):
+    pass
+def fun10(*args, **args2):
+    pass
+def fun11(a, b=10, *args, **args2):
+    pass
+
 
