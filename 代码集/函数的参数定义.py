@@ -61,4 +61,32 @@ fun4(a=100, c=300, b=200)
 dic={'a': 111, 'b': 222, 'c': 333}
 fun4(**dic)  # 函数调用时，将字典中的键值对都转换为关键字实参传入
 
+def fun5(a, b=10):
+    print('a=', a)
+    print('b=', b)
+
+def fun6(*args):
+    print(args)
+def fun7(**args2):
+    print(args2)
+
+fun6(10, 20, 30, 40)
+fun7(a=11, b=22, c=33, d=44, e=55)
+
+def fun8(a, b, c, d):
+    print('a=', a)
+    print('b=', b)
+    print('c=', c)
+    print('d=', d)
+
+fun8(10, 20, 30, 40)
+fun8(a=10, b=20, c=30, d=40)
+fun8(10, 20, c=30, d=40)
+
+def fun8(a, b, *, c, d):  # 从*之后的参数，在函数调用时，只能常用关键字参数传递
+    print('a=', a)
+    print('b=', b)
+    print('c=', c)
+    print('d=', d)
+
 
